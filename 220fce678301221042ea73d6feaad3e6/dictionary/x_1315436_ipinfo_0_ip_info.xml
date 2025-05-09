@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ba3456238341221042ea73d6feaad3c3" label="IP Info" max_length="40" name="x_1315436_ipinfo_0_ip_info" type="collection">
+        <element label="Read Me" max_length="40" name="read_me" type="string"/>
+        <element label="Location" max_length="40" name="location" type="string"/>
+        <element label="Postal" max_length="40" name="postal" type="integer"/>
+        <element label="Region" max_length="40" name="region" type="string"/>
+        <element display="true" label="Ip" max_length="255" name="ip" type="ip_addr"/>
+        <element label="Anycast" max_length="40" name="anycast" type="boolean"/>
+        <element label="Hostname" max_length="40" name="hostname" type="string"/>
+        <element label="Organization" max_length="40" name="organization" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="City" max_length="40" name="city" type="string"/>
+        <element label="Timezone" max_length="40" name="timezone" type="string"/>
+        <element label="Country" max_length="40" name="country" type="string"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
