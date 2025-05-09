@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1384000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>add_new_ip_info</internal_name>
+        <label_cache>[{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛IP Info Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1315436_ipinfo_0_ip_info","column_name":"sys_id","usedInstances":{"ed254b17-7db3-4543-b434-4b269b545f1a":["log_message"]}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.region","label":"2 - Get Geographic Data from IP Action➛region","reference_display":"region","type":"string","base_type":"string","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["region"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"233530d4-1aa8-44db-9c84-9abe677a11be"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.organization","label":"2 - Get Geographic Data from IP Action➛organization","reference_display":"organization","type":"string","base_type":"string","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["organization"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"61cd3626-7668-484e-8328-c799d064d967"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.anycast","label":"2 - Get Geographic Data from IP Action➛anycast","reference_display":"anycast","type":"boolean","base_type":"boolean","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["anycast"]},"attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","uiUniqueId":"53199f3a-c6c1-4ebf-8c1e-639321af4a6a"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.read_me","label":"2 - Get Geographic Data from IP Action➛read me","reference_display":"read me","type":"string","base_type":"string","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["read_me"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"d0321860-4496-4e99-baca-de07fc093b6e"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.timezone","label":"2 - Get Geographic Data from IP Action➛timezone","reference_display":"timezone","type":"string","base_type":"string","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["timezone"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"4231dc19-89c7-4a48-bccf-460cb1bd2d39"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.postal","label":"2 - Get Geographic Data from IP Action➛postal","reference_display":"postal","type":"integer","base_type":"integer","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["postal"]},"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"0da73d7c-f87c-4bf2-a4d9-96cd4b60d917"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.location","label":"2 - Get Geographic Data from IP Action➛location","reference_display":"location","type":"string","base_type":"string","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["location"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"aad5fdb8-7a5d-4d22-a356-37523bed6b28"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.country","label":"2 - Get Geographic Data from IP Action➛country","reference_display":"country","type":"string","base_type":"string","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["country"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"8c96dee5-846d-46e3-bbc9-bd01259e7913"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.city","label":"2 - Get Geographic Data from IP Action➛city","reference_display":"city","type":"string","base_type":"string","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["city"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"f6b624c6-331b-419e-b61d-09d87af6a70c"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.hostname","label":"2 - Get Geographic Data from IP Action➛hostname","reference_display":"hostname","type":"string","base_type":"string","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["hostname"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"6f820a79-bbc9-4c73-9954-ad7b42c4ab38"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.ip","label":"2 - Get Geographic Data from IP Action➛ip","reference_display":"ip","type":"ip_addr","base_type":"ip_addr","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["ip"]},"attributes":{"uiTypeLabel":"IP Address (Validated IPV4","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","IPV6)":"true","uiType":"ip_addr","uiUniqueId":"c9977926-5170-4528-b419-fda3721cc997"}},{"name":"Created_1.current.ip","label":"Trigger - Record Created➛IP Info Record➛Ip","reference":"","reference_display":"Ip","type":"ip_addr","base_type":"ip_addr","parent_table_name":"x_1315436_ipinfo_0_ip_info","column_name":"ip","usedInstances":{"4f9e6cf1-a11c-4476-9bbb-79689fd0d52c":["condition"],"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78":["ip_address"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛IP Info Record","reference":"x_1315436_ipinfo_0_ip_info","reference_display":"IP Info","type":"reference","base_type":"reference","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["record"]},"attributes":{}}]</label_cache>
+        <master_snapshot>ad7ada2b8341221042ea73d6feaad33a</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Add New IP Info</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>717ada2b8341221042ea73d6feaad37d</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 21:43:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>632592238341221042ea73d6feaad3fc</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Add New IP Info</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="IPInfo Spoke" source="x_1315436_ipinfo_0">220fce678301221042ea73d6feaad3e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">220fce678301221042ea73d6feaad3e6</sys_scope>
+        <sys_update_name>sys_hub_flow_632592238341221042ea73d6feaad3fc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 22:06:23</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=632592238341221042ea73d6feaad3fc"/>
+    <sys_variable_value action="delete_multiple" query="document_key=632592238341221042ea73d6feaad3fc"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1315436_ipinfo_0_ip_info">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 22:06:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>717ada2b8341221042ea73d6feaad37d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="IPInfo Spoke">220fce678301221042ea73d6feaad3e6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 22:06:23</sys_updated_on>
+        <table>x_1315436_ipinfo_0_ip_info</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>632592238341221042ea73d6feaad3fc</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 22:06:23</sys_created_on>
+        <sys_id>bd7ada2b8341221042ea73d6feaad37d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 22:06:23</sys_updated_on>
+        <trigger display_value="">717ada2b8341221042ea73d6feaad37d</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=632592238341221042ea73d6feaad3fc^sys_idNOT INbd7ada2b8341221042ea73d6feaad37d"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=632592238341221042ea73d6feaad3fc"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=632592238341221042ea73d6feaad3fc^sys_idNOT INa72592238341221042ea73d6feaad3fe"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>632592238341221042ea73d6feaad3fc</id>
+        <name>Add New IP Info</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 21:43:17</sys_created_on>
+        <sys_id>a72592238341221042ea73d6feaad3fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 21:43:17</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a72592238341221042ea73d6feaad3fe"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=632592238341221042ea73d6feaad3fc^sys_idNOT IN6655de238341221042ea73d6feaad3d0,6a55de238341221042ea73d6feaad3cc"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Add New IP Info">632592238341221042ea73d6feaad3fc</model>
+        <model_id>632592238341221042ea73d6feaad3fc</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_632592238341221042ea73d6feaad3fc</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 21:44:02</sys_created_on>
+        <sys_id>6655de238341221042ea73d6feaad3d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">220fce678301221042ea73d6feaad3e6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 21:44:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6655de238341221042ea73d6feaad3d0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Add New IP Info">632592238341221042ea73d6feaad3fc</model>
+        <model_id>632592238341221042ea73d6feaad3fc</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_632592238341221042ea73d6feaad3fc</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 21:44:02</sys_created_on>
+        <sys_id>6a55de238341221042ea73d6feaad3cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">220fce678301221042ea73d6feaad3e6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 21:44:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6a55de238341221042ea73d6feaad3cc"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=632592238341221042ea73d6feaad3fc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=632592238341221042ea73d6feaad3fc"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=632592238341221042ea73d6feaad3fc^sys_idNOT IN6e55de638341221042ea73d6feaad3ba"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Add New IP Info">632592238341221042ea73d6feaad3fc</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 21:44:02</sys_created_on>
+        <sys_id>6e55de638341221042ea73d6feaad3ba</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 21:52:16</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+VZ33OjNhD+Vxie2pl0Boxt4vQpdZxeZnLJneO7PmRSjUDC1lQWLggS9yb/e1f8MsaQYLvp2bk8JCCJ3f1Wu58+yP03nWOHcv1Mn2CHU/1EZ0LSQGA+WS4oDEs1jASeq7k5FgRLP1jqZzKI6InuB4QG+pl5oseYR/RuGV4ReAiWJk9kj+vZNNw/IdMye12rj9iCCc9HBlwgdQWLCAsXHC+/ZmuvPmlX6cQCB2BOKlffdHfGOAmo0M/uHyBc5c/1TGoOTg3X6sCPYXROu6bTtxyzQyxMsQEmqjAr8ckatCtw9ElSQSi48jAPaU0iAorJreDLYsUM8phmYo6fQvYPWD811DqPQuwuTeeKW5RhT4fdmc9ceruQzBfpSBpnOunzaC5u0vhV1qiHIy7zrMFIFII9ulAhqyCyiLy7mf84zh1eMpGgyya572Je3GEpA+ZEkoYq4R7jkHqU5ib0oyCJfjwa3o4v0B/nk+GH0RiNR3eT8dVwMrrQnxNc6O9IWUwjzGJBKZznYqsvGeVqA8NliGAnT/TQDdhCnruSxTQL5/lkVaRBJMAGKvZjo1zTzBUpvGYhJOAeMOTpSUzCvHedmRxHQvNh5+CX5kYBJEdqeVV4V3M8zZLqfcqLMElKVj8xDhCaIxX/LHIQpG06hVwxsYgkwt0eGZiNZWmvpSbpEDB9r+sPz2q3KKeuLNWc9yUs331kYcjEtJSkAqMqyU2IBTqoXS3PYAo1PC6sD2sNmC3Ku9UwGslos3riSlVUGKgF9Zhut2NYTt+wFWoTLj3TsI0e9ohlGM5piXo23TfGJSvVXAb3EhllI23YqLslG4VJH/EWXVNNah58uZFblWS8Xs+ZnY7a/4z0hgcYWoW8ra3YuyjEdPhivR5fgvYfkz4mMYYnSI6xDam3IG+P+4/AGDsQt4Pdv6aBHwlSpTZlU2NCW63Qfsry9/NxEVuZxD0/oC/jXV9xPCj3oe9V/eQdiMVyJ+LuWCa1+92+AXxtKaruDQaOizueZ/dtapoV4l45ro3mKAj7lUaJ6zqtiSFrizCuq90taPv7B7gXeWelWEvd6dzhk/TQF4Ql6DcpOp8K9R072C0Zz7fiz9Hnzf5NB19rYduwCWkkLdcptXAZVk0wsgbhm7Sw8Z3eAdO31J0Lbe4Tyi9W5vS100NlK88Q8hc0UJmB5/Sv59fDD+c3v4/ufs3+Xo5vP+bXk1t47hELGSLpI0wIKuW/ZUWnOWmnPR5nVKCQSqnOou0FiACJnjyDUyelU1ntu5aQjh9oN7745Wq1TrujcPolVXZEZ3RZibQBDcYC7V2hdnw521BegPQ3GF9Dql4QGvb8B3qvrjRXvJ7F7eUZ7nTwwLRs1wbMIM+8LnWw2e308MDuW3a/Is8q7psDO3ih1pJL4kZWqhNEbXs1rm35QiBVJdYO7VApjMy09Yo4/HGTspcgzbuv8WPCLsEevoYt2h5CDRBXJ/nGcT/ljNB8bj/WK3uJVwy3Pee5zoD0enYD51GvjvPKzl8KTNbA/l8UrjrWVCANLPglnTqs/3i8eU3uo0KVT4p8ryxOLnwNJjRwojFPyxQEJZqz1OSMQptzeBsGh5ryfmSqpCzKNpEXJP6ucadfDza0KAxrWW8dEbC9ZWalhfb9EkiJ5Q5Ik9Ts2o2026w3K9MHLzq35o+4jo5eFFnb2a3arJVZpfJfr4GWqvIdo36z75g1URzo4fvwL/SdGsHdIgAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=632592238341221042ea73d6feaad3fc^sys_idNOT IN3aa95ae78341221042ea73d6feaad39a,76a95ae78341221042ea73d6feaad39b,7ea95ae78341221042ea73d6feaad398"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Add New IP Info">632592238341221042ea73d6feaad3fc</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>4f9e6cf1-a11c-4476-9bbb-79689fd0d52c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 22:02:54</sys_created_on>
+        <sys_id>3aa95ae78341221042ea73d6feaad39a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="IPInfo Spoke">220fce678301221042ea73d6feaad3e6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-29 09:29:47</sys_updated_on>
+        <ui_id>4870bb76-7024-43be-b3fb-cba53997a9a8</ui_id>
+        <values>H4sIAAAAAAAA/+2W30/bMBDH/5Uqz22UNP0BfZuokJAYTDDxAixy7EtrybEzxwFC1P9958QpESBGJDQJjT7Vd/5cvne5s3Nde5x5K28GLAgPwwWNwiiaBsH0YBYmiygJpywiAKE39iTJAHdqoEozXN8RUVpDXR9pIAZYHPq01Bqk2e3Qz3iRC1JduW1ooVsuGPq91fXt2MuJxogGtLeqn7neK0mQBARuveg0PddoqtyumaJlhrpi3hlPHbl2ntHJGj0IWTlhMPbgwYBkgEJSIgoYexmRjBilK29ldIkGTJqdS1Htd2y5NG2iGXko+CM+eRbYfSlgZtQVYb+MXYFac7omhlxiZGpKva+X4hSKtiYMUlIKc9S3tRvOc8OVbBFDEtHRSpSZPGsr4u0D9N5HWaAIyG2eVnmbVnq5VfcXnchjLpuSuBSFokTsV8QYzZPSWDm1BwKaGmckz7ncxLlWd7yBUUrmbwQu/FSoe3xmwTfSJ9Tq9rGqxD9G+7oxXxHNbRLfMQzCu7FXVMWRIEXxlArWMP5dWiVtYi6FuKlCU4K46QQLU81z8w0fdQdO+G7smj6Zv9Vh9PCpoXoxnxr/IQ6jcD6LFjHHhFMVB/gntv9edv/Jj9FJ6xg2BO+Q2A3Bz+bVvy7ZzcEL22mfHZ21DjcF8w+bgoPPNAUujU8/Bn9r/mD65vHa66Sm34te429VYazvpgyCiNX1Euh8OmVksmBLmMxmweGEJEs2gTANWYQhYXngd9Bu94tyUw1iLWA5VUqjB6Itg7R9abbSg/AOQj7HBIgYRLcIsoZn8KjksIp1EPJ2yuKBBXcM0kRWlBRmEO0YpJXeEMkfh9euDzY5bIZGaJHXvia+WvCrBf91Cw67ud9xvnY39zEHwYpXDtzu2oYMe99A3B7Az65u5xxdOef+I/bD7u9wETS/T3SL/zffsrd/AGuzoq7CDQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Add New IP Info">632592238341221042ea73d6feaad3fc</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>4f9e6cf1-a11c-4476-9bbb-79689fd0d52c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 22:02:54</sys_created_on>
+        <sys_id>76a95ae78341221042ea73d6feaad39b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="IPInfo Spoke">220fce678301221042ea73d6feaad3e6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-29 09:29:47</sys_updated_on>
+        <ui_id>ed254b17-7db3-4543-b434-4b269b545f1a</ui_id>
+        <values>H4sIAAAAAAAA/+VUXWvbMBT9K0bPiYmTZl3zVtIVCv0YK3QPpZgb6ToRyJInyWmzkB+037E/titbSbw2jAb6NvCLjo+ke47OvY9rJgWbsPGMZzPOP41H2WAwom9WZOIsG5whH38+FaesxzSUSExl5rnCJSqClqDqgEldGFoK6SoFq4eIXrUoX0glLGo2eXzqsQosnePRssn61a/3FqJgRrdP2HWs4kBhflUFiC+M5BjX13HbdAsaK0IZgx7DF49aIN1fgHLYYyVoAd7Y1Q6xCOJOqz2wkNrTaSyQX5z8SfedDAKvQFLEsf23W+bRnBYuLsDDvbc197WN1LZYR16sdxL7/eTWaEz6/Y7bndI3vT032v3qTSIz6zK/g9VSzzvkZ0L25GGX/MVaYztUjOvIHW3o5QQWUCs/PV5B9m4Fw2MUjI5QcBIUtObfVV4aSiPLQmZgprZPY1Rd6ts2Z2yn9+FV/Fv04mAX1I4igFWIWchNDFFxvzDP37YZuZS6qSj+VIaD2q3AeytntQ/+rhkqLOmgvISqIiPyypqlbDZTsWU6V7RIC2We6VIn5zoFHqSllGpILwm/aOAHsDLIvKFjaPOmx9zKTRU4txdLEc5/1KGSVnrUkDdGNVu4lZU/pwuWGMsN9jftPBz9q51x/Hf7lugczLHzVteQXH1N1usp9Z9HkWcpry2Z5VMqNJdis0kWkDgpTGJRKdQgIOFGJ79/vUhv0rdT6QNOPG6ivcOCbVJvdvoPmhKnmqMgNNnvTrX7LbhtrA+basPx+GPG2qFB8bb1juq8/6+xnv4AciAmtrIHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Geographic Data from IP Action">69e81aa78341221042ea73d6feaad3c2</action_type>
+        <action_type_parent display_value="Get Geographic Data from IP Action">5e7f8e238301221042ea73d6feaad3b6</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>69e81aa78341221042ea73d6feaad3c2</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Add New IP Info">632592238341221042ea73d6feaad3fc</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>4f9e6cf1-a11c-4476-9bbb-79689fd0d52c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 22:02:54</sys_created_on>
+        <sys_id>7ea95ae78341221042ea73d6feaad398</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="IPInfo Spoke">220fce678301221042ea73d6feaad3e6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-29 09:29:47</sys_updated_on>
+        <ui_id>7ec522da-6d7e-4409-ab7d-e1f1d33b1e78</ui_id>
+        <values>H4sIAAAAAAAA/41SXWvbQBD8K+KeWrCFZcuO6rfgEDC0TWgav4QgVncr6+B0utydnKjG/717kfxBKKQvgpud3Z2Z1dOeScGWDAVmCcBVNkuT6TSZpFOEq5lYlAggZnzORkxDjcSUJgchLDpH2A5UG8D9fmURPIo8iXlrLWofS3M4EEVIZxR0m8+ZvJKKBmu2fHoeMQOWFnq0bLn/UPpfxQoKVERd30dnyf+y4TtzgQ3A93P3dc+MvpALKYL6aH2/SUfhu/hK/MaKIDQZMXzzqAWSwhKUwxGrQVNHYzu29LYlgOyLO626E6OS2tOeW6lF5CuMTNU5yUFFquHgZaOjpqSCdJFpCyV5dPYTs7Dgzck/pD+dhOElUk482GEXz3w4Qw+XN+DhgeRw39qByqtGcnR9wgJLaJVfXWI94c4ERX2Lh0IduxvV1vpnny07DThenZDWkQg0IZxgd/BePlTN66+jyhBByHEoBv/q9ALvrSxaH/TsWZ/8koVMw3T5++MNe+jzKxIVFdakKq/BGKm3ubHNTr4rIWN1vCU6xqVqXsmBk1sdAw8pxDQE4lvCb97hDVgZIvlBY7CX8KjlS4vr8MPyZJ4VWZaOvy1QjNMkScewKPh4gZhlc5hPkgTZYcRc51YKnDuHSVfMX9oQRR/tEGLe3yG0cCuNvyZROxzyOjz/BS9hxXTbAwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=632592238341221042ea73d6feaad3fc"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=632592238341221042ea73d6feaad3fc^sys_idNOT INc33756278341221042ea73d6feaad368"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0b3756278341221042ea73d6feaad367</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Add New IP Info">632592238341221042ea73d6feaad3fc</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 21:52:16</sys_created_on>
+        <sys_id>c33756278341221042ea73d6feaad368</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="IPInfo Spoke">220fce678301221042ea73d6feaad3e6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 22:06:21</sys_updated_on>
+        <ui_id>4f9e6cf1-a11c-4476-9bbb-79689fd0d52c</ui_id>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8PPxthOE9a8lW6FwtqMJRTGKOZauk7EZEmT5KRZyH/flT+SsKaslD7uzTpX995zjg7eRbrxpvFuoa+cE0sVTX88xpFQAaPvXaSgxmgaMa248EKrogXiaA2yCQX65MIZCduHI8JWQnKL/TQDlno82mi6+6vktwYLCSVKapx7K9SS2gWnU5VClV2yjI3yyShP0/zjRVZORmWW8xEgjOje0Hg9kPvwpUXiF1mHfYS7YZO2PNDK0jjCJ4+KI62uQDqMoxoUB6/t9oBYBD5T8gishPKd4hqenPhNs/PxOFyskDSy3o7DseitGlzSguHMBIId4qGUg4VaNrW673QEk7GCRvoTkxtH89AE0oFFT6mar/Tm27DwRqhWYF+UmoE8nMCTDWXj0YWHQYk1DSpqMIbMKYzVa9E2E5c6WUo6JJXUG1oakpIAC8QT8giSG8I/tfADWBFU3NEYau5oluAEK9pU0ThvScK+taX41QRCncBeStG5QRccs8L4K9qzxp71Pn4eyZM07nbX9EgeeZElrLHkgU+E2e9v5/ezxee7r4vvz/P6qp73SPQljKtxlo7PJ/pici7RZ7L8cozzf8Q4GP/KFKdp+j/GpzEWruji2Gtrl785xY8hst0G1+WGIxOOiCwCdjv8f0NhSwEQ7BTaaPszSDhi+z9afdJqyQUAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=632592238341221042ea73d6feaad3fc"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=632592238341221042ea73d6feaad3fc"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_632592238341221042ea73d6feaad3fc^sys_idNOT IN6655de238341221042ea73d6feaad3d2,aa55de238341221042ea73d6feaad3cf"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_632592238341221042ea73d6feaad3fc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 21:44:02</sys_created_on>
+        <sys_id>6655de238341221042ea73d6feaad3d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_1315436_ipinfo_0">220fce678301221042ea73d6feaad3e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">220fce678301221042ea73d6feaad3e6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 21:44:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_632592238341221042ea73d6feaad3fc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 21:44:02</sys_created_on>
+        <sys_id>aa55de238341221042ea73d6feaad3cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_1315436_ipinfo_0">220fce678301221042ea73d6feaad3e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">220fce678301221042ea73d6feaad3e6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 21:44:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_632592238341221042ea73d6feaad3fc"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_632592238341221042ea73d6feaad3fc"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_632592238341221042ea73d6feaad3fc"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>add_new_ip_info</internal_name>
+        <label_cache>[{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛IP Info Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1315436_ipinfo_0_ip_info","column_name":"sys_id","usedInstances":{"ed254b17-7db3-4543-b434-4b269b545f1a":["log_message"]}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.region","label":"2 - Get Geographic Data from IP Action➛region","reference_display":"region","type":"string","base_type":"string","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["region"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"233530d4-1aa8-44db-9c84-9abe677a11be"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.organization","label":"2 - Get Geographic Data from IP Action➛organization","reference_display":"organization","type":"string","base_type":"string","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["organization"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"61cd3626-7668-484e-8328-c799d064d967"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.anycast","label":"2 - Get Geographic Data from IP Action➛anycast","reference_display":"anycast","type":"boolean","base_type":"boolean","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["anycast"]},"attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","uiUniqueId":"53199f3a-c6c1-4ebf-8c1e-639321af4a6a"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.read_me","label":"2 - Get Geographic Data from IP Action➛read me","reference_display":"read me","type":"string","base_type":"string","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["read_me"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"d0321860-4496-4e99-baca-de07fc093b6e"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.timezone","label":"2 - Get Geographic Data from IP Action➛timezone","reference_display":"timezone","type":"string","base_type":"string","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["timezone"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"4231dc19-89c7-4a48-bccf-460cb1bd2d39"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.postal","label":"2 - Get Geographic Data from IP Action➛postal","reference_display":"postal","type":"integer","base_type":"integer","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["postal"]},"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"0da73d7c-f87c-4bf2-a4d9-96cd4b60d917"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.location","label":"2 - Get Geographic Data from IP Action➛location","reference_display":"location","type":"string","base_type":"string","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["location"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"aad5fdb8-7a5d-4d22-a356-37523bed6b28"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.country","label":"2 - Get Geographic Data from IP Action➛country","reference_display":"country","type":"string","base_type":"string","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["country"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"8c96dee5-846d-46e3-bbc9-bd01259e7913"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.city","label":"2 - Get Geographic Data from IP Action➛city","reference_display":"city","type":"string","base_type":"string","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["city"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"f6b624c6-331b-419e-b61d-09d87af6a70c"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.hostname","label":"2 - Get Geographic Data from IP Action➛hostname","reference_display":"hostname","type":"string","base_type":"string","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["hostname"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"6f820a79-bbc9-4c73-9954-ad7b42c4ab38"}},{"name":"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78.ip","label":"2 - Get Geographic Data from IP Action➛ip","reference_display":"ip","type":"ip_addr","base_type":"ip_addr","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["ip"]},"attributes":{"uiTypeLabel":"IP Address (Validated IPV4","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","IPV6)":"true","uiType":"ip_addr","uiUniqueId":"c9977926-5170-4528-b419-fda3721cc997"}},{"name":"Created_1.current.ip","label":"Trigger - Record Created➛IP Info Record➛Ip","reference":"","reference_display":"Ip","type":"ip_addr","base_type":"ip_addr","parent_table_name":"x_1315436_ipinfo_0_ip_info","column_name":"ip","usedInstances":{"4f9e6cf1-a11c-4476-9bbb-79689fd0d52c":["condition"],"7ec522da-6d7e-4409-ab7d-e1f1d33b1e78":["ip_address"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛IP Info Record","reference":"x_1315436_ipinfo_0_ip_info","reference_display":"IP Info","type":"reference","base_type":"reference","usedInstances":{"4870bb76-7024-43be-b3fb-cba53997a9a8":["record"]},"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Add New IP Info</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Add New IP Info">632592238341221042ea73d6feaad3fc</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 22:06:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ad7ada2b8341221042ea73d6feaad33a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">220fce678301221042ea73d6feaad3e6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 22:06:22</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=ad7ada2b8341221042ea73d6feaad33a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ad7ada2b8341221042ea73d6feaad33a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=ad7ada2b8341221042ea73d6feaad33a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=ad7ada2b8341221042ea73d6feaad33a^sys_idNOT INad7ada2b8341221042ea73d6feaad33b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>ad7ada2b8341221042ea73d6feaad33a</id>
+        <name>Add New IP Info</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 22:06:22</sys_created_on>
+        <sys_id>ad7ada2b8341221042ea73d6feaad33b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 22:06:22</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ad7ada2b8341221042ea73d6feaad33b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=ad7ada2b8341221042ea73d6feaad33a^sys_idNOT IN297ada2b8341221042ea73d6feaad34b,617ada2b8341221042ea73d6feaad33d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Add New IP Info">ad7ada2b8341221042ea73d6feaad33a</model>
+        <model_id>ad7ada2b8341221042ea73d6feaad33a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_ad7ada2b8341221042ea73d6feaad33a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 22:06:22</sys_created_on>
+        <sys_id>297ada2b8341221042ea73d6feaad34b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">220fce678301221042ea73d6feaad3e6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 22:06:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=297ada2b8341221042ea73d6feaad34b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Add New IP Info">ad7ada2b8341221042ea73d6feaad33a</model>
+        <model_id>ad7ada2b8341221042ea73d6feaad33a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_ad7ada2b8341221042ea73d6feaad33a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 22:06:22</sys_created_on>
+        <sys_id>617ada2b8341221042ea73d6feaad33d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">220fce678301221042ea73d6feaad3e6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 22:06:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=617ada2b8341221042ea73d6feaad33d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=ad7ada2b8341221042ea73d6feaad33a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ad7ada2b8341221042ea73d6feaad33a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=ad7ada2b8341221042ea73d6feaad33a^sys_idNOT IN257ada2b8341221042ea73d6feaad35a"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Add New IP Info">ad7ada2b8341221042ea73d6feaad33a</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 22:06:22</sys_created_on>
+        <sys_id>257ada2b8341221042ea73d6feaad35a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 22:06:22</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+VZ33OjNhD+Vxie2pl0Boxt4vQpdZxeZnLJneO7PmRSjUDC1lQWLggS9yb/e1f8MsaQYLvp2bk8JCCJ3f1Wu58+yP03nWOHcv1Mn2CHU/1EZ0LSQGA+WS4oDEs1jASeq7k5FgRLP1jqZzKI6InuB4QG+pl5oseYR/RuGV4ReAiWJk9kj+vZNNw/IdMye12rj9iCCc9HBlwgdQWLCAsXHC+/ZmuvPmlX6cQCB2BOKlffdHfGOAmo0M/uHyBc5c/1TGoOTg3X6sCPYXROu6bTtxyzQyxMsQEmqjAr8ckatCtw9ElSQSi48jAPaU0iAorJreDLYsUM8phmYo6fQvYPWD811DqPQuwuTeeKW5RhT4fdmc9ceruQzBfpSBpnOunzaC5u0vhV1qiHIy7zrMFIFII9ulAhqyCyiLy7mf84zh1eMpGgyya572Je3GEpA+ZEkoYq4R7jkHqU5ib0oyCJfjwa3o4v0B/nk+GH0RiNR3eT8dVwMrrQnxNc6O9IWUwjzGJBKZznYqsvGeVqA8NliGAnT/TQDdhCnruSxTQL5/lkVaRBJMAGKvZjo1zTzBUpvGYhJOAeMOTpSUzCvHedmRxHQvNh5+CX5kYBJEdqeVV4V3M8zZLqfcqLMElKVj8xDhCaIxX/LHIQpG06hVwxsYgkwt0eGZiNZWmvpSbpEDB9r+sPz2q3KKeuLNWc9yUs331kYcjEtJSkAqMqyU2IBTqoXS3PYAo1PC6sD2sNmC3Ku9UwGslos3riSlVUGKgF9Zhut2NYTt+wFWoTLj3TsI0e9ohlGM5piXo23TfGJSvVXAb3EhllI23YqLslG4VJH/EWXVNNah58uZFblWS8Xs+ZnY7a/4z0hgcYWoW8ra3YuyjEdPhivR5fgvYfkz4mMYYnSI6xDam3IG+P+4/AGDsQt4Pdv6aBHwlSpTZlU2NCW63Qfsry9/NxEVuZxD0/oC/jXV9xPCj3oe9V/eQdiMVyJ+LuWCa1+92+AXxtKaruDQaOizueZ/dtapoV4l45ro3mKAj7lUaJ6zqtiSFrizCuq90taPv7B7gXeWelWEvd6dzhk/TQF4Ql6DcpOp8K9R072C0Zz7fiz9Hnzf5NB19rYduwCWkkLdcptXAZVk0wsgbhm7Sw8Z3eAdO31J0Lbe4Tyi9W5vS100NlK88Q8hc0UJmB5/Sv59fDD+c3v4/ufs3+Xo5vP+bXk1t47hELGSLpI0wIKuW/ZUWnOWmnPR5nVKCQSqnOou0FiACJnjyDUyelU1ntu5aQjh9oN7745Wq1TrujcPolVXZEZ3RZibQBDcYC7V2hdnw521BegPQ3GF9Dql4QGvb8B3qvrjRXvJ7F7eUZ7nTwwLRs1wbMIM+8LnWw2e308MDuW3a/Is8q7psDO3ih1pJL4kZWqhNEbXs1rm35QiBVJdYO7VApjMy09Yo4/HGTspcgzbuv8WPCLsEevoYt2h5CDRBXJ/nGcT/ljNB8bj/WK3uJVwy3Pee5zoD0enYD51GvjvPKzl8KTNbA/l8UrjrWVCANLPglnTqs/3i8eU3uo0KVT4p8ryxOLnwNJjRwojFPyxQEJZqz1OSMQptzeBsGh5ryfmSqpCzKNpEXJP6ucadfDza0KAxrWW8dEbC9ZWalhfb9EkiJ5Q5Ik9Ts2o2026w3K9MHLzq35o+4jo5eFFnb2a3arJVZpfJfr4GWqvIdo36z75g1URzo4fvwL/SdGsHdIgAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=ad7ada2b8341221042ea73d6feaad33a^sys_idNOT IN217ada2b8341221042ea73d6feaad359,2d7ada2b8341221042ea73d6feaad357,6d7ada2b8341221042ea73d6feaad359"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Add New IP Info">ad7ada2b8341221042ea73d6feaad33a</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>4f9e6cf1-a11c-4476-9bbb-79689fd0d52c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 22:06:22</sys_created_on>
+        <sys_id>217ada2b8341221042ea73d6feaad359</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="IPInfo Spoke">220fce678301221042ea73d6feaad3e6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 22:06:22</sys_updated_on>
+        <ui_id>4870bb76-7024-43be-b3fb-cba53997a9a8</ui_id>
+        <values>H4sIAAAAAAAA/+2W30/bMBDH/5Uqz22UNP0BfZuokJAYTDDxAixy7EtrybEzxwFC1P9958QpESBGJDQJjT7Vd/5cvne5s3Nde5x5K28GLAgPwwWNwiiaBsH0YBYmiygJpywiAKE39iTJAHdqoEozXN8RUVpDXR9pIAZYHPq01Bqk2e3Qz3iRC1JduW1ooVsuGPq91fXt2MuJxogGtLeqn7neK0mQBARuveg0PddoqtyumaJlhrpi3hlPHbl2ntHJGj0IWTlhMPbgwYBkgEJSIgoYexmRjBilK29ldIkGTJqdS1Htd2y5NG2iGXko+CM+eRbYfSlgZtQVYb+MXYFac7omhlxiZGpKva+X4hSKtiYMUlIKc9S3tRvOc8OVbBFDEtHRSpSZPGsr4u0D9N5HWaAIyG2eVnmbVnq5VfcXnchjLpuSuBSFokTsV8QYzZPSWDm1BwKaGmckz7ncxLlWd7yBUUrmbwQu/FSoe3xmwTfSJ9Tq9rGqxD9G+7oxXxHNbRLfMQzCu7FXVMWRIEXxlArWMP5dWiVtYi6FuKlCU4K46QQLU81z8w0fdQdO+G7smj6Zv9Vh9PCpoXoxnxr/IQ6jcD6LFjHHhFMVB/gntv9edv/Jj9FJ6xg2BO+Q2A3Bz+bVvy7ZzcEL22mfHZ21DjcF8w+bgoPPNAUujU8/Bn9r/mD65vHa66Sm34te429VYazvpgyCiNX1Euh8OmVksmBLmMxmweGEJEs2gTANWYQhYXngd9Bu94tyUw1iLWA5VUqjB6Itg7R9abbSg/AOQj7HBIgYRLcIsoZn8KjksIp1EPJ2yuKBBXcM0kRWlBRmEO0YpJXeEMkfh9euDzY5bIZGaJHXvia+WvCrBf91Cw67ud9xvnY39zEHwYpXDtzu2oYMe99A3B7Az65u5xxdOef+I/bD7u9wETS/T3SL/zffsrd/AGuzoq7CDQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Geographic Data from IP Action">69e81aa78341221042ea73d6feaad3c2</action_type>
+        <action_type_parent display_value="Get Geographic Data from IP Action">5e7f8e238301221042ea73d6feaad3b6</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>69e81aa78341221042ea73d6feaad3c2</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Add New IP Info">ad7ada2b8341221042ea73d6feaad33a</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>4f9e6cf1-a11c-4476-9bbb-79689fd0d52c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 22:06:22</sys_created_on>
+        <sys_id>2d7ada2b8341221042ea73d6feaad357</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="IPInfo Spoke">220fce678301221042ea73d6feaad3e6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 22:06:22</sys_updated_on>
+        <ui_id>7ec522da-6d7e-4409-ab7d-e1f1d33b1e78</ui_id>
+        <values>H4sIAAAAAAAA/41SXWvbQBD8K+KeWrCFZcuO6rfgEDC0TWgav4QgVncr6+B0utydnKjG/717kfxBKKQvgpud3Z2Z1dOeScGWDAVmCcBVNkuT6TSZpFOEq5lYlAggZnzORkxDjcSUJgchLDpH2A5UG8D9fmURPIo8iXlrLWofS3M4EEVIZxR0m8+ZvJKKBmu2fHoeMQOWFnq0bLn/UPpfxQoKVERd30dnyf+y4TtzgQ3A93P3dc+MvpALKYL6aH2/SUfhu/hK/MaKIDQZMXzzqAWSwhKUwxGrQVNHYzu29LYlgOyLO626E6OS2tOeW6lF5CuMTNU5yUFFquHgZaOjpqSCdJFpCyV5dPYTs7Dgzck/pD+dhOElUk482GEXz3w4Qw+XN+DhgeRw39qByqtGcnR9wgJLaJVfXWI94c4ERX2Lh0IduxvV1vpnny07DThenZDWkQg0IZxgd/BePlTN66+jyhBByHEoBv/q9ALvrSxaH/TsWZ/8koVMw3T5++MNe+jzKxIVFdakKq/BGKm3ubHNTr4rIWN1vCU6xqVqXsmBk1sdAw8pxDQE4lvCb97hDVgZIvlBY7CX8KjlS4vr8MPyZJ4VWZaOvy1QjNMkScewKPh4gZhlc5hPkgTZYcRc51YKnDuHSVfMX9oQRR/tEGLe3yG0cCuNvyZROxzyOjz/BS9hxXTbAwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Add New IP Info">ad7ada2b8341221042ea73d6feaad33a</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>4f9e6cf1-a11c-4476-9bbb-79689fd0d52c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 22:06:22</sys_created_on>
+        <sys_id>6d7ada2b8341221042ea73d6feaad359</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="IPInfo Spoke">220fce678301221042ea73d6feaad3e6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 22:06:22</sys_updated_on>
+        <ui_id>ed254b17-7db3-4543-b434-4b269b545f1a</ui_id>
+        <values>H4sIAAAAAAAA/+VUXWvbMBT9K0bPiYmTZl3zVtIVCv0YK3QPpZgb6ToRyJInyWmzkB+037E/titbSbw2jAb6NvCLjo+ke47OvY9rJgWbsPGMZzPOP41H2WAwom9WZOIsG5whH38+FaesxzSUSExl5rnCJSqClqDqgEldGFoK6SoFq4eIXrUoX0glLGo2eXzqsQosnePRssn61a/3FqJgRrdP2HWs4kBhflUFiC+M5BjX13HbdAsaK0IZgx7DF49aIN1fgHLYYyVoAd7Y1Q6xCOJOqz2wkNrTaSyQX5z8SfedDAKvQFLEsf23W+bRnBYuLsDDvbc197WN1LZYR16sdxL7/eTWaEz6/Y7bndI3vT032v3qTSIz6zK/g9VSzzvkZ0L25GGX/MVaYztUjOvIHW3o5QQWUCs/PV5B9m4Fw2MUjI5QcBIUtObfVV4aSiPLQmZgprZPY1Rd6ts2Z2yn9+FV/Fv04mAX1I4igFWIWchNDFFxvzDP37YZuZS6qSj+VIaD2q3AeytntQ/+rhkqLOmgvISqIiPyypqlbDZTsWU6V7RIC2We6VIn5zoFHqSllGpILwm/aOAHsDLIvKFjaPOmx9zKTRU4txdLEc5/1KGSVnrUkDdGNVu4lZU/pwuWGMsN9jftPBz9q51x/Hf7lugczLHzVteQXH1N1usp9Z9HkWcpry2Z5VMqNJdis0kWkDgpTGJRKdQgIOFGJ79/vUhv0rdT6QNOPG6ivcOCbVJvdvoPmhKnmqMgNNnvTrX7LbhtrA+basPx+GPG2qFB8bb1juq8/6+xnv4AciAmtrIHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ad7ada2b8341221042ea73d6feaad33a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=ad7ada2b8341221042ea73d6feaad33a^sys_idNOT INa97ada2b8341221042ea73d6feaad356"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0b3756278341221042ea73d6feaad367</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Add New IP Info">ad7ada2b8341221042ea73d6feaad33a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 22:06:22</sys_created_on>
+        <sys_id>a97ada2b8341221042ea73d6feaad356</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 22:06:22</sys_updated_on>
+        <ui_id>4f9e6cf1-a11c-4476-9bbb-79689fd0d52c</ui_id>
+        <values>H4sIAAAAAAAA/+1V0WrbMBT9laFnY2ynCWveSrpCoW3GEgpjFHMtyYmYLHmSnDQz+fddWY4T2oy1bI97s450r845uge3RDeubpxd6itrxUqR6beniAjlMfxuiYKKkymhWjHhhFZ5B0RkA7LxG/jJhK0l7B6PCF0LyQzvu9VgsMZxQ6btiy3BsKBMoEwvaUpH2WSUJUn28SItJqMizdgIOIywoYSCSzw6O9D4cNch0W/5uV3tceuMUKt+fdd3WRxAbZhnlSYR4c+OK8aRTwnS8ohUoBg4bXYDYjiwuZJHYC2UC4IreLbiJ16Yjcf+YMlRIu3dGJZ571SAy2twgFQa6hozGKcF5TaYw3gJjXSzUywcmNdeaihxUMhDtZZNpR6CI2RocPIwjUUSvPZKPfVeR7lY6+2XA8sboTpX+k2pKchhBQ69Kxrn+bSES15ho7yCukZH89rojeiKkUsVryQu4lLqLV7qpysG6onHaCzEN4hfd/AjGOFV3GMbLA40C7CC5t0kYju0iZN9ROzOziRYexSJ7uY/Gk8xSO7F5cEfX0KNqN0V3rzhvY599HqwT2a6bWf41o6zPI1pY9AVF4t6v79dPMyXn+4/L7++nvo31bwvF5cwLsdpMj6fi4vJuVycScQ7w5D9IQz+Jd6YhSRJ/ofhr8MgbB5GuNfWXf4Ps/DkBz/cOXhNhUVqS4/dHv4FfmOHwyXoKbTV5rsXdcT2vwCXI5/tVQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ad7ada2b8341221042ea73d6feaad33a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=ad7ada2b8341221042ea73d6feaad33a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_ad7ada2b8341221042ea73d6feaad33a^sys_idNOT IN617ada2b8341221042ea73d6feaad349,e97ada2b8341221042ea73d6feaad34f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ad7ada2b8341221042ea73d6feaad33a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 22:06:22</sys_created_on>
+        <sys_id>617ada2b8341221042ea73d6feaad349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_1315436_ipinfo_0">220fce678301221042ea73d6feaad3e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">220fce678301221042ea73d6feaad3e6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 22:06:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ad7ada2b8341221042ea73d6feaad33a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 22:06:22</sys_created_on>
+        <sys_id>e97ada2b8341221042ea73d6feaad34f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_1315436_ipinfo_0">220fce678301221042ea73d6feaad3e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">220fce678301221042ea73d6feaad3e6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 22:06:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ad7ada2b8341221042ea73d6feaad33a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_ad7ada2b8341221042ea73d6feaad33a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ad7ada2b8341221042ea73d6feaad33a"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>632592238341221042ea73d6feaad3fc</sys_id>
+        <latest_snapshot>ad7ada2b8341221042ea73d6feaad33a</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch8-03-26-2025_04-03-2025_0833.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=632592238341221042ea73d6feaad3fc^sys_idNOT INb17ada2b8341221042ea73d6feaad37f"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"b17ada2b8341221042ea73d6feaad37f","name":"plan","plan_signature":null}}</plan>
+        <plan_id>632592238341221042ea73d6feaad3fc</plan_id>
+        <snapshot>16704a848315a21042ea73d6feaad3a0</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-27 22:06:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b17ada2b8341221042ea73d6feaad37f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-27 22:06:23</sys_updated_on>
+        <trigger display_value="">717ada2b8341221042ea73d6feaad37d</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=632592238341221042ea73d6feaad3fc"/>
+</record_update>
